@@ -1,0 +1,215 @@
+#labels{
+    
+    margin-bottom: 5%;
+}
+#text{
+    text-align: center;
+    color: #000000;
+    font-family: cursive;
+    background-color: rgba(132, 132, 146, 0.473);
+    padding: 0%;
+    font-size: 25px;
+}
+.selectpicker{
+    color:rgb(0, 29, 23);
+    text-decoration-style: solid;
+    font-family: cursive;
+    width:50%;
+    height: 5%;
+    background-color: rgb(160, 159, 203);
+   
+}
+#text2{
+    
+    color: rgb(122, 121, 177);
+    font-family: cursive;
+    font-size: 20px;
+    
+}
+#status{
+    
+    color: rgb(67, 66, 138);
+    font-family: cursive;
+    text-align: center;
+}
+
+
+#screenshot{
+    
+    color: rgb(122, 121, 177);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2%;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.webcam-box-outer {
+    background: rgb(253, 247, 247);
+    border: 1px solid #585858;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 9px;
+    margin-left: 20%;
+  }
+  .webcam-box-inner {
+    border: 1px solid #f1dcdc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 300px;
+  }
+  #webcam {
+    height: 300px;
+    width:300px;
+    transform: scaleX(-1);
+  }
+  #train{
+      color: black;
+      background-color:#2ea0a0;
+      font-family: cursive;
+      border: rgb(40, 23, 141);
+    
+      margin-top: 10%;
+      
+      height: 5%;
+      width: 150;
+  }
+  #predict{
+    color: black;
+    background-color:#2ea0a0;
+    font-family: cursive;
+    border: rgb(40, 23, 141);
+    height: 5%;
+    width: 150;
+    
+}
+#output{
+    font-family: cursive;
+    color: #2ea0a0;
+    font-size: 120%;
+
+}
+#clear{
+    
+    font-size: 80%;
+    font-family: cursive;
+    text-align: center;
+}
+.rounded {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-color: #000000;
+    border-style: none;
+ }
+#add{
+    color: black;
+      
+      font-family: cursive;
+      font-size: 80%;
+      height: 4%;
+      width: 100;
+
+}
+#add:hover{
+    color: black;
+      
+      font-family: cursive;
+      
+      height: 4%;
+      width: 100;
+    background-color: rgb(105, 92, 224);
+}
+.btn {
+    border-color: rgb(96, 105, 228);
+    border: black;
+}
+
+body{
+background-image: url('train.jpg');
+}
+.hyper-params {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    margin-right:0px;
+  }
+  .dropdown {
+    flex-direction: column;
+    width: 110px;
+    margin-bottom: 10px;
+  }
+  .dropdown label {
+    color: #777;
+    font-size: 11px;
+    display: block;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .dropdown .select {
+    position: relative;
+  }
+  .dropdown .select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #313131;
+    border-radius: 0;
+    color: #331111;
+    display: block;
+    font-size: 12px;
+    outline: none;
+    padding: 6px 0;
+    width: 100%;
+  }
+  .dropdown .select::after {
+    
+    color: rgb(49, 12, 12);
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    pointer-events: none;
+  }
+.navbar{
+margin-bottom: 2%;
+}
+#billinput{
+    width:70%;
+    height: 40px;
+    margin-bottom: 2%;
+}
+#pls{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+#pls li{
+
+    background-color: #c7c7c7;
+}
+#pls li:nth-child(2n){
+    background-color: #f1f1f1;
+}
+#pls li{
+    width:70%;
+    height:30px;
+}
+#3{
+    width: 20%;
+    height: 20%;
+}

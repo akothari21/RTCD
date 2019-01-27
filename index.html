@@ -1,0 +1,162 @@
+  <html>
+  <head>
+      <link rel="stylesheet" href="styles.css"></link>
+      <title>Fault Trainer-Admin</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+  </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+              <img src="https://us.123rf.com/450wm/get4net/get4net1711/get4net171100315/89001947-train-icon.jpg?ver=6" width="40" height="50" alt="">
+            ABC Railways</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a id="home" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a id="customer" class="nav-link" href="#">Generate Report</a>
+              </li>
+        
+              
+            </ul>
+    
+          </div>
+        </nav>
+      <p id='text'>Railway Track Fault Trainer and Recognizer<p>
+      <div id="status">Loading model and data.........</div>
+      <div id="labels">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div id="trainer">
+          <p id='text2'>Add a Label to create Data set</p>
+        <select class="selectpicker rounded"  id="list" data-live-search="true" >
+                <option value="1">Fault A</option>
+                <option value="2">Fault B</option>
+                <option value="3">Fault C </option>
+                <option value="4">Fault D </option>
+                <option value="5">Fault E </option>
+                <option value="6">Fault F </option>
+                <option value="7">Fault G</option>
+                <option value="8">Fault H</option>
+                <option value="9">Fault I</option>
+                <option value="10">Fault J </option>
+                <option value="11">Fault K </option>
+                <option value="12">Fault L</option>
+                <option value="13">Fault M</option>
+                <option value="14">Fault N</option>
+                <option value="15">Fault O</option>
+                <option value="16">Fault P</option> </option>
+                <option value="17">Fault Q </option>
+                <option value="18">Fault R </option>
+                <option value="19">Fault S</option>
+                <option value="20">Fault T</option>
+                
+            </select>
+    <button href= "#" type="button" class="btn btn-outline-primary" id="add">ADD</button>
+    <div class="hyper-params">
+        <!-- Learning rate -->
+        <div class="dropdown">
+          <label>Learning rate</label>
+          <div class="select">
+            <select id="learningRate">
+              <option value="0.00001">0.00001</option>
+              <option selected value="0.0001">0.0001</option>
+              <option value="0.01">0.001</option>
+              <option value="0.03">0.003</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Batch size -->
+        <div class="dropdown">
+          <label>Batch size</label>
+          <div class="select">
+            <select id="batchSizeFraction">
+              <option value="0.05">0.05</option>
+              <option value="0.1">0.1</option>
+              <option selected value="0.4">0.4</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Epochs -->
+        <div class="dropdown">
+          <label>Epochs</label>
+          <div class="select">
+            <select id="epochs">
+              <option value="10">10</option>
+              <option selected value="20">20</option>
+              <option value="40">40</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Hidden units -->
+        <div class="dropdown">
+          <label>Hidden units</label>
+          <div class="select">
+            <select id="dense-units">
+              <option value="10">10</option>
+              <option selected value="100">100</option>
+              <option value="200">200</option>
+            </select>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="col-lg-6">
+<div class="webcam-box-outer">
+      <p id="output">
+        Predicted Fault: <span id="predval">Not yet Trained</span> 
+      <p>
+        <div class="webcam-box-inner">
+          <video id="webcam" autoplay playsinline muted id="webcam" width="224" height="224"></video>
+        </div>
+      <button  id="train" ><span id="train-status">Train</span></button>
+      <button id="predict">Test</button>
+      <p id="screenshot"> Snapshots </p>
+          <canvas  id="myCanvas" width="auto" hieght="auto"></canvas> 
+</div>
+</div>
+<div class="col-lg-3">
+    <div id="billlist">
+        <input  class="rounded selectpicker" id='billinput' type='text' placeholder="Enter Fault Type">
+        <button id="clear" class="rounded btn">CLEAR</button>
+        <ul id="pls" class="rounded">
+            <li>Item name</li>
+            
+        </ul>
+    </div>
+
+</div>
+
+    </div>
+    </div>
+  </div>
+</div>
+     
+     
+
+            
+
+   
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.6"> </script>  
+<script src= "webcam.js" type="module"></script> 
+<script src= "ui.js" type="module"></script>
+<script src= "bill.js" type="module"></script>
+<script src= "index.js" type="module"></script>
+<script src= "dataset.js" type="module"></script>
+</body>
+</html>
